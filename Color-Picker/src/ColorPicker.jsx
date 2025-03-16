@@ -8,9 +8,12 @@ function ColorPicker(){
     setColor(event.target.value)
   }
   return(
-    <div>
+    <div className="div-container">
       <h1>Color Picker</h1>
-      <p style={{backgroundColor:color}}>Selected Color:{color}</p>
+      <div className="coloor-display" style={{backgroundColor:color}}>
+      <p  >Selected Color:{color}</p>
+      </div>
+      
       <label>
         <p>Select a Color</p>
         <input type="color" value={color} onChange={settingColor}></input>
